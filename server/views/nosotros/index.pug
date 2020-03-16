@@ -1,0 +1,37 @@
+extends ../layout/index
+block content
+    main.container.mt-5
+        .row
+            .col-md-5
+                img(src="img/nosotros.jpg", alt="Image of Us", class="img-fluid")
+            .col-md-7
+                h1 #{page}
+                blockquote Agencia de viajes nació en el año 2009 como el proyecto ambicioso de un par de 
+                            | hermanos de la la ciudad de Paris. Al año siguiente movieron la empresa a la ciudad de
+                            | Guadalajara donde residia su abuelo. Ambos disfrutaban viajar y fueron conociendo 
+                            |a las personas correctas con las cuales negociaron lo que hoy seria los mejores paquetes turísticos para usted. 
+
+                p Somos una empresa Méxicana dedicada a brindarte los mejores viajes nacionales e internacionales que el 
+                    | dinero pueda pagar. En nuestra agencia tenemos paquetes a distintas partes del mundo continua navegando y 
+                    | descrubre las distintas promociones que tenemos para ti.
+          
+                p    Nuestro compromiso es con usted, somos los únicos que aseguramos la totalidad
+                    | De sus pertenencias e integridad durante sus vacaciones, usted disponga de su tiempo y nosotros 
+                    | velamos por usted.
+
+
+    .listado-iconos
+        .container.mt-5.py-5.text-center   
+            .row          
+                .col-md-4
+                    img(src="img/icono_seguridad.svg", class="img-fluid mb-4")
+                    h2.mb-4 Seguridad
+                    p Usted esta totalmente asegurado.
+                .col-md-4
+                    img(src="img/icono_destinos.svg", class="img-fluid mb-4")
+                    h2.mb-4 Mejores Destinos
+                    p Contamos con los mejores destinos del mercado.
+                .col-md-4
+                    img(src="img/icono_precios.svg", class="img-fluid mb-4")
+                    h2.mb-4 Mejor Precio
+                    p Contamos con paquetes económicos y aceptamos todas las tarjetas.  

@@ -1,0 +1,41 @@
+extends ../layout/index
+block slider
+    .slider
+        h1 Rio de Janeiro
+        em Conócenos
+block content
+    main.container.mt-5
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.mb-5
+            .col-md-6
+                p
+                    | Somos una empresa Méxicana dedicada a brindarte los mejores viajes
+                    | nacionales e internacionales que el dinero pueda pagar.
+                    | En nuestra agencia tenemos paquetes a distintas partes del mundo continua navegando
+                    | y descrubre las distintas promociones que tenemos para ti.
+                    h4 ¿Cómo funciona?
+                p
+                    | Por el momento nuestros nuestro servicio en linea tiene algunas dificultades.
+                    | Si vez algun viaje que llame tu atención solo tines que mandarnos un correo a:
+                    | TopAgency@Agencia.com y un asesor se pondra en contacto contigo.
+                    | Puedes marcarnos al: 55 31748727.
+                
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", class="img-fluid")
+
+        h2.text-center.mb-5 Próximos Viajes
+        include ../layout/partials/viajes
+
+    .descuento 
+        .container
+            .row
+                .col-md-6
+                    .contenido
+                        h3 25% de Descuento
+                        p.titulo Viaje a Canada
+                        p.fecha  30 de Marzo de 2020 - 6 de Abril de 2020  
+                        p.precio $25,000 MXM
+
+    .container
+        h2.text-center.my-5 Testimonios
+        include ../layout/partials/testimonios                    

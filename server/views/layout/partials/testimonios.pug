@@ -1,0 +1,22 @@
+blockquote.text-center La Experiencia de Nuestros Clientes
+.row.testimoniales
+        if(testimonios.length > 9)
+            - for (var x = testimonios.length - 9; x < testimonios.length; x++)                  
+                .col-md-6.col-lg-4.mb-4
+                    .card
+                        .card-body
+                            blockquote.blockquote
+                            p.mb-0
+                                | #{testimonios[x].message}
+                            footer.blockquote-footer
+                                | #{testimonios[x].name}
+        else
+            each testimonio in testimonios     
+                .col-md-6.col-lg-4.mb-4
+                        .card
+                            .card-body
+                                blockquote.blockquote
+                                p.mb-0
+                                    | #{testimonio.message}
+                                footer.blockquote-footer
+                                    | #{testimonio.name}  

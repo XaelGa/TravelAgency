@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        script(src='https://kit.fontawesome.com/0bef951942.js', crossorigin='anonymous')
+        link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css')
+        link(href='https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Open+Sans:400,700|Staatliches&display=swap', rel='stylesheet')
+        link(rel = "stylesheet", href="/css/style.css")
+        script(src='https://code.jquery.com/jquery-3.4.1.js', 
+        integrity='sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=', 
+        crossorigin='anonymous')
+
+        title #{title} | #{page}
+    body(class=clase)
+        include includes/header
+        block slider
+        block content
+        include includes/footer

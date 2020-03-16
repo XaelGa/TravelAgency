@@ -1,0 +1,23 @@
+header
+ .navegacion
+    .container
+        .row.justify-content-center.justify-content-md-between.align-items-center.py-4
+          .col-6.col-md-4
+            a(href="/")
+                img(src="/img/logo.svg", alt="Logo Agencia de viajes", class="img-fluid")
+          .col-6.col-md-8
+                nav.nav.justify-content-center.justify-content-md-end
+                    a.nav-link(href="/nosotros", class=(url === '/nosotros'? 'active' : '')) Nosotros
+                    a.nav-link(href="/viajes", class=(url === '/viajes'? 'active' : '')) Viajes
+                    a.nav-link(href="/testimonios", class=(url === '/testimonios'? 'active' : '')) Testimonios
+
+script(type='text/javascript').
+  $(document).ready(function() {
+  $('.nav a').bind("mouseover", function(){
+  var color  = $(this).css("color");
+  $(this).css("color", "#DC135F");
+  $(this).bind("mouseout", function(){
+  $(this).css("color", color);
+  })
+  })
+  })

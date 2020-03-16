@@ -1,0 +1,18 @@
+extends ../layout/index
+block content
+    main.container.mt-5
+        .row
+            .col-md-5
+                img(src=`/img/destinos_${viaje.image}_ln.jpg`, class="img-fluid")
+            .col-md-7
+                h1 #{viaje.tittle}
+                p 
+                    i.fas.fa-calendar-alt 
+                    |  Fecha de viaje: #{viaje.startDate} - Fecha de regreso: #{viaje.endDate}
+                p 
+                    i.fas.fa-dollar-sign
+                    |  #{viaje.price} MXN
+                p
+                    i.fas.fa-users
+                    |   #{viaje.places} lugares disponibles.
+                p=viaje.description  
