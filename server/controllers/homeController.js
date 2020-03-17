@@ -9,6 +9,7 @@ exports.consultasHomepage = async (req,res) => {
     //Trae los primeros tres viajes de la base de datos.
     const viajes = await viaje.findAll({order: Sequelize.literal('startDate Desc'), limit: 3});
 
+    try { 
     //Trae lo
     let testimonios = await testimonio.findAll({order: Sequelize.literal('id Desc'), limit:3});
     res.render('index', {
@@ -17,5 +18,8 @@ exports.consultasHomepage = async (req,res) => {
         viajes,
         testimonios
     });
+   }catch(error){
+       console.log(error);
+   }
 
 }
