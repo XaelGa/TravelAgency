@@ -19,7 +19,7 @@ exports.consultasHomepage = async (req,res) => {
         testimonios
     });
    }catch(error){
-       console.log(error);
+       alert(error);
    }
 
 }
